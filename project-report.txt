@@ -1,0 +1,101 @@
+CSCB58 Project Report: Winter 2019
+
+Team Member A
+-------------
+First Name: Naomi
+Last Name: Sibal
+Student Number: 1003939786
+UofT E-mail Address: naomi.sibal@mail.utoronto.ca
+
+Team Member B
+-------------
+First Name: Tahasun 
+Last Name: Tarannum
+Student Number: 1003940471
+UofT E-mail Address: tahasun.tarannum@mail.utoronto.ca
+
+Team Member C 
+-------------
+First Name: Mahima
+Last Name: Bhayana
+Student Number: 1001582726
+UofT E-mail Address: mahima.bhayana@mail.utoronto.ca
+
+Team Member D
+-------------
+First Name: Shamayum
+Last Name:  Rashad
+Student Number: 998107757
+UofT E-mail Address: shamayum.rashad@mail.utoronto.ca
+
+
+Project Plan
+--------
+
+Project Title: Bop It
+
+
+Provide a one paragraph description of your project:
+Our game would emulate a Bop It toy. It'll present the player with a sequence that they have to repeat in a given amount of time. There will be two modes, one player and two player. The goal for 'one player' mode is to get the right sequence in the given time. The goal for 'two player' mode is to get to 10 right sequences quickest. There will be three difficulty levels will will effect the sequence length and time limit. The specific sequence parts will have their own unique colour and sound. The whole game will be displayed on the computer screen and the input will be taken from the computer keyboard. The player's current score and high score will be displayed and updated concurrently during play if needed to reflect a new high score.
+
+
+What is your plan for the first week?
+- write the state diagram + table
+- designing the circuit
+- test external hardware to see if we can use it to add interesting functionality
+- design a sequence with the switches
+
+
+What is your plan for the second week?
+- build the remaining sequences (including external hardware, keys, etc)
+- set up the rounds + point system
+
+
+What is your plan for the third week?
+- test
+- finish up any loose ends
+- create our video
+
+
+What is your backup plan if things don’t work out as planned?
+- a simpler Simon game using only the DE2 board
+
+
+Weekly Reports
+--------------
+Week 1:
+- We looked at existing Simon game code to see if we could build up upon it. They were not
+working or were not appropriate for our purposes so we pivoted to building our game from scratch.
+- We worked on developing the code for the datapath and the FSM.
+- We began working on the random sequence generator, and getting the DE2 to identify inputted
+sequences. We got it working for hard-coded sequences.
+
+Week 2:
+- finished random sequence generator
+- completed the mif file for the background
+- finishing fsm, datapath and control
+- getting started on animations
+- figuring out how to implement keyboard and buttons
+- debugging the main verilog file
+
+Week 3:
+- player one game logic completed
+- finished vga implementation based on signals from keys
+- worked on hooking up vga implementation to game logic
+- worked on two player game logic
+- added difficultly level and speed
+- started implementing player two logic
+> completed but had trouble debugging keyboard, animation and 2 player mode
+
+References
+----------
+- VGA Adapter Code from the lab
+- HEX Display Code from the lab
+- 5-bit number randomizer from https://stackoverflow.com/questions/14497877/how-to-implement-a-pseudo-hardware-random-number-generator
+
+Repo & Video
+------------
+
+Video: https://youtu.be/335U9tru518
+
+Github Link: https://github.com/mahimabhayana/notsimon
